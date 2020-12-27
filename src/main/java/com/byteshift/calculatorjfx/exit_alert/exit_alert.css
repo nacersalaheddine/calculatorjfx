@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Gugi';
+    src: url('fonts/Gugi-Regular.ttf');
+}
+
+*{
+    -fx-fill:white;
+}
+.root {
+    -fx-background-color:#eee;
+    -fx-font-family:"Gugi";
+    /*-fx-font-size:35;*/
+    -fx-fill:white;
+}
+.button{
+    -fx-cursor: hand;
+    -fx-fill:lightblue;
+}
+.header{
+    -fx-text-fill: #fff;
+    -fx-background-color:#2D3E50;/*#505C68;*/
+    -fx-font-weight:bolder;
+    -fx-padding: 10;
+}
+.footer{
+    -fx-background-color:#2D3E50;/*#505C68;*/
+    -fx-padding: 10;
+}
+.btn-normal-styled{
+    -fx-background-color: #292D4B;/*#374353;*/
+}
+.btn-extra-styled{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#FF528A,#E33565 );
+}
+.separator:horizontal .line {
+    -fx-border-color:white;
+    -fx-border-width:0.5;
+    -fx-opacity:1;
+}

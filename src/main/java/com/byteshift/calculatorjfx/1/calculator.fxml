@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="root" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.byteshift.calculatorjfx.calculatorjfx.CalculatorController">
+    <children>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="4" GridPane.rowIndex="6" />
+                <JFXButton layoutX="10.0" layoutY="210.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="1" GridPane.rowIndex="7" />
+                <JFXButton layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="2" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <JFXButton layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="5" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <JFXButton layoutX="10.0" layoutY="260.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="7" GridPane.rowIndex="5" />
+                <JFXButton layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#allClearOnActionHandler" styleClass="btn-normal-styled" text="AC" GridPane.rowIndex="4">
+               <tooltip>
+                  <Tooltip text="Clear All" />
+               </tooltip></JFXButton>
+                <JFXButton contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#clearOnActionHandler" styleClass="btn-normal-styled" text="C" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <tooltip>
+                  <Tooltip text="Clear result" />
+               </tooltip></JFXButton>
+                <JFXButton layoutX="10.0" layoutY="190.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="9" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <JFXButton layoutX="160.0" layoutY="260.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="8" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="210.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#operatorOnActionHandler" styleClass="btn-normal-styled" text="-" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                    <graphic>
+                        <SVGPath content="M20,11H4c-0.552,0-1,0.448-1,1s0.448,1,1,1h16c0.552,0,1-0.448,1-1S20.552,11,20,11z" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="6" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="460.0" layoutY="260.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#operatorOnActionHandler" styleClass="btn-normal-styled" text="+" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                    <graphic>
+                        <SVGPath content="M20,11h-7V4c0-0.552-0.448-1-1-1s-1,0.448-1,1v7H4c-0.552,0-1,0.448-1,1s0.448,1,1,1h7v7c0,0.552,0.448,1,1,1s1-0.448,1-1 v-7h7c0.552,0,1-0.448,1-1S20.552,11,20,11z" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="3" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <JFXButton layoutX="460.0" layoutY="310.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#dotOnActionHandler" styleClass="btn-normal-styled" text="." GridPane.rowIndex="8" />
+                <JFXButton layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#numberOnActionHandler" styleClass="btn-normal" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="360.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#equalsOnActionHandler" styleClass="btn-equation-eq" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                    <graphic>
+                        <SVGPath content="M 4 7 C 3.448 7 3 7.448 3 8 C 3 8.552 3.448 9 4 9 L 20 9 C 20.552 9 21 8.552 21 8 C 21 7.448 20.552 7 20 7 L 4 7 z M 4 15 C 3.448 15 3 15.448 3 16 C 3 16.552 3.448 17 4 17 L 20 17 C 20.552 17 21 16.552 21 16 C 21 15.448 20.552 15 20 15 L 4 15 z" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="460.0" layoutY="360.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#operatorOnActionHandler" styleClass="btn-normal-styled" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                    <graphic>
+                        <SVGPath content="M 12 3 C 10.35499 3 9 4.3549904 9 6 C 9 7.6450096 10.35499 9 12 9 C 13.64501 9 15 7.6450096 15 6 C 15 4.3549904 13.64501 3 12 3 z M 12 5 C 12.564129 5 13 5.4358706 13 6 C 13 6.5641294 12.564129 7 12 7 C 11.435871 7 11 6.5641294 11 6 C 11 5.4358706 11.435871 5 12 5 z M 5 11 C 4.448 11 4 11.448 4 12 C 4 12.552 4.448 13 5 13 L 19 13 C 19.552 13 20 12.552 20 12 C 20 11.448 19.552 11 19 11 L 5 11 z M 12 15 C 10.35499 15 9 16.35499 9 18 C 9 19.64501 10.35499 21 12 21 C 13.64501 21 15 19.64501 15 18 C 15 16.35499 13.64501 15 12 15 z M 12 17 C 12.564129 17 13 17.435871 13 18 C 13 18.564129 12.564129 19 12 19 C 11.435871 19 11 18.564129 11 18 C 11 17.435871 11.435871 17 12 17 z" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="460.0" layoutY="210.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#operatorOnActionHandler" styleClass="btn-normal-styled" text="\%" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <graphic>
+                        <SVGPath content="M 7.5 4 C 5.578848 4 4 5.578848 4 7.5 C 4 9.421152 5.578848 11 7.5 11 C 9.421152 11 11 9.421152 11 7.5 C 11 5.578848 9.421152 4 7.5 4 z M 15.980469 4.9882812 A 1.0001 1.0001 0 0 0 15.167969 5.4453125 L 7.1679688 17.445312 A 1.0001 1.0001 0 1 0 8.8320312 18.554688 L 16.832031 6.5546875 A 1.0001 1.0001 0 0 0 15.980469 4.9882812 z M 7.5 6 C 8.3402718 6 9 6.6597282 9 7.5 C 9 8.3402718 8.3402718 9 7.5 9 C 6.6597282 9 6 8.3402718 6 7.5 C 6 6.6597282 6.6597282 6 7.5 6 z M 16.5 13 C 14.578848 13 13 14.578848 13 16.5 C 13 18.421152 14.578848 20 16.5 20 C 18.421152 20 20 18.421152 20 16.5 C 20 14.578848 18.421152 13 16.5 13 z M 16.5 15 C 17.340272 15 18 15.659728 18 16.5 C 18 17.340272 17.340272 18 16.5 18 C 15.659728 18 15 17.340272 15 16.5 C 15 15.659728 15.659728 15 16.5 15 z" />
+                    </graphic>
+               <tooltip>
+                  <Tooltip text="Percentage" />
+               </tooltip>
+                </JFXButton>
+                <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="160.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#operatorOnActionHandler" styleClass="btn-normal-styled" text="×" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <graphic>
+                        <SVGPath content="M 5.9902344 4.9902344 A 1.0001 1.0001 0 0 0 5.2929688 6.7070312 L 10.585938 12 L 5.2929688 17.292969 A 1.0001 1.0001 0 1 0 6.7070312 18.707031 L 12 13.414062 L 17.292969 18.707031 A 1.0001 1.0001 0 1 0 18.707031 17.292969 L 13.414062 12 L 18.707031 6.7070312 A 1.0001 1.0001 0 0 0 17.980469 4.9902344 A 1.0001 1.0001 0 0 0 17.292969 5.2929688 L 12 10.585938 L 6.7070312 5.2929688 A 1.0001 1.0001 0 0 0 5.9902344 4.9902344 z" />
+                    </graphic>
+                </JFXButton>
+                <Label fx:id="lblOperationsHistory" alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-family: lato;" styleClass="lblHistory" GridPane.columnSpan="4" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblOperationResult" alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="lblExpression" text="0" GridPane.columnSpan="4" GridPane.rowIndex="2">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </Label>
+                <StackPane fx:id="calcHeader" styleClass="calculator-header" GridPane.columnSpan="4">
+                    <children>
+                        <HBox alignment="CENTER" spacing="5.0">
+                            <children>
+                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeMouseClickHandler" prefHeight="20.0" prefWidth="20.0" styleClass="close-btn">
+                                    <tooltip>
+                                        <Tooltip text="Close" />
+                                    </tooltip>
+                                </Label>
+                                <Label fx:id="maximizeBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#maximizeMouseClickHandler" prefHeight="20.0" prefWidth="20.0" styleClass="max-btn">
+                                    <tooltip>
+                                        <Tooltip text="Maximize" />
+                                    </tooltip>
+                                </Label>
+                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizeMouseClickHandler" prefHeight="20.0" prefWidth="20.0" styleClass="min-btn">
+                                    <tooltip>
+                                        <Tooltip text="Minimize" />
+                                    </tooltip>
+                                </Label>
+                                <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#showAboutBtnAction">
+                                            <graphic>
+                                                <SVGPath content="M 12 1.015625 C 11.606875 1.015625 11.213734 1.1588125 10.927734 1.4453125 L 1.4453125 10.927734 C 0.8533125 11.519734 0.8533125 12.481266 1.4453125 13.072266 L 10.927734 22.556641 C 11.213734 22.842641 11.595 23 12 23 C 12.405 23 12.785266 22.842641 13.072266 22.556641 L 22.556641 13.072266 C 23.148641 12.480266 23.148641 11.518734 22.556641 10.927734 L 13.072266 1.4453125 C 12.785766 1.1588125 12.393125 1.015625 12 1.015625 z M 12 3.1992188 L 20.800781 12 L 12 20.800781 L 3.1992188 12 L 12 3.1992188 z M 11 7 L 11 13 L 13 13 L 13 7 L 11 7 z M 11 15 L 11 17 L 13 17 L 13 15 L 11 15 z" fill="#c6c6c6" />
+                                            </graphic>
+                                 <tooltip>
+                                    <Tooltip text="About this application" />
+                                 </tooltip>
+                                        </JFXButton>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </HBox>
+                            </children>
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </HBox>
+                        <Label alignment="CENTER" style="-fx-text-fill: white;" text="CALCULATOR">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </StackPane>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#signOperatorOnActionHandler" styleClass="btn-normal-styled" text="×" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <graphic>
+                  <SVGPath content="M 12 2 C 11.448 2 11 2.448 11 3 L 11 8 L 6 8 C 5.448 8 5 8.448 5 9 C 5 9.552 5.448 10 6 10 L 11 10 L 11 15 C 11 15.552 11.448 16 12 16 C 12.552 16 13 15.552 13 15 L 13 10 L 18 10 C 18.552 10 19 9.552 19 9 C 19 8.448 18.552 8 18 8 L 13 8 L 13 3 C 13 2.448 12.552 2 12 2 z M 6 18 C 5.448 18 5 18.448 5 19 C 5 19.552 5.448 20 6 20 L 18 20 C 18.552 20 19 19.552 19 19 C 19 18.448 18.552 18 18 18 L 6 18 z" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="clockBtn" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="btn-extra-styled" text="00:00:00" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <tooltip>
+                  <Tooltip text="Current time" />
+               </tooltip></JFXButton>
+            <JFXButton contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#deleteOnActionHandler" styleClass="btn-normal-styled" text="DEL" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+    </children>
+</StackPane>

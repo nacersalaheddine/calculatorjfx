@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('fonts/digital-7.regular.ttf');
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('fonts/Cairo-Regular.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-VariableFont_wght.ttf');
+}
+/* Start Menu Part */
+
+.root{
+    -fx-background-color:#eee;
+}
+.calculator-header{
+    -fx-background-color: #292D4B;
+
+}
+SVGPath{
+    -fx-fill: white;
+}
+.close-btn{
+    -fx-background-color: #FC5653;
+    -fx-background-radius: 100%;
+}
+.close-btn:hover{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#E33565,#F7C754);
+    -fx-background-radius: 100%;
+    -fx-cursor: hand
+}
+
+.min-btn{
+    -fx-background-color: #29CC41;
+    -fx-background-radius: 100%;
+}
+.min-btn:hover{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#E33565,#F7C754);
+    -fx-background-radius: 100%;
+    -fx-cursor: hand
+}
+.max-btn{
+    -fx-background-color: #FFBD2E;
+    -fx-background-radius: 100%;
+}
+.max-btn:hover{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#E33565,#F7C754);
+    -fx-background-radius: 100%;
+    -fx-cursor: hand
+}
+
+
+/* End Menu Part */
+
+JFXButton {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-family: 'Oswald';
+
+    /*
+-fx-pref-width: 65px;
+-fx-pref-height: 65px;*/
+}
+
+JFXButton:hover {
+    -fx-cursor: hand;
+}
+.button{
+    -fx-background-radius:0;
+    -fx-border-radius:0;
+}
+.btn-normal {
+    -fx-background-color:#2D3E50;/*#5B6A7D;*/
+    -fx-text-fill: #fff;
+
+}
+.btn-normal-styled{
+    -fx-background-color: #292D4B;/*#374353;*/
+}
+.btn-extra-styled{
+    /* -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#FF528A,#E33565 );
+    */
+    -fx-background-color:#292D4B;
+    -fx-border-color:#eee;
+    -fx-border-width:0 0 0.5 0;
+    -fx-opacity:1;
+    -fx-font-family: 'Digital-7';
+    -fx-font-size:35;
+}
+.btn-equation-eq{
+    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#FF528A,#E33565 );*/
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#E33565,#F7C754);
+
+
+}
+.btn-equation {
+    -fx-background-color: #292D4B;/*#374353*/;
+
+}
+
+
+.lblExpression {
+    -fx-text-fill: #fff;
+    -fx-background-color:#2D3E50;/*#505C68;*/
+    -fx-font-size: 45px;
+    -fx-font-weight:bolder;
+    -fx-font-family: 'Oswald';
+
+}
+
+.lblHistory {
+    -fx-font-family: 'Oswald';
+    -fx-font-weight:normal;
+    -fx-font-size: 22px;
+    -fx-background-color:#2D3E50;/*#505C68;*/
+    -fx-text-fill:#818990;
+
+}

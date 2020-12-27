@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Gugi';
+    src: url('fonts/Gugi-Regular.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-VariableFont_wght.ttf');
+}
+*{
+    -fx-main-background:#FBFCFF;
+    -fx-surface:#EFF3FB	;
+
+    -fx-primary:#434465;
+    -fx-secondary:#000;
+
+    -fx-text-primary:#0A0A33;
+    -fx-text-secondary:#434465;
+
+    /*-fx-font-family:"oswald";*/
+
+}
+.min-btn{
+    -fx-background-color: #29CC41;
+    -fx-background-radius: 100%;
+}
+.min-btn:hover{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#E33565,#F7C754);
+    -fx-background-radius: 100%;
+    -fx-cursor: hand
+}
+.close-btn{
+    -fx-background-color: #FC5653;
+    -fx-background-radius: 100%;
+}
+.close-btn:hover{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#E33565,#F7C754);
+    -fx-background-radius: 100%;
+    -fx-cursor: hand
+}
+.root {
+    -fx-background-color: white;
+    -fx-font-family:"Oswald";
+}
+.text{
+    -fx-font-size:14;
+}
+
+
+.signup-check-terms-and-conditions{
+    -fx-border-color:blue;
+    -fx-border-width:0;
+}
+.check-box {
+    /* default properties */
+    selected-box-color: white;
+    box-color: white;
+    mark-color: white;
+}
+.signup-gender-container{	
+    -fx-border-style:solid;
+    -fx-border-color:transparent transparent #eee transparent;
+    -fx-background-color:transparent;
+    -fx-border-width:1px;
+
+}
+/***Left container*/
+
+.signup-left-side-header-title{
+    -fx-font-family: 'Gugi';
+    -fx-fill: #555;
+    -fx-font-size:35px;
+    -fx-font-weight:bold;
+}
+
+.signup-left-side-body-sub-title{
+    -fx-fill:white;
+    -fx-font-size:15px;
+
+    -fx-font-weight:normal;
+}
+
+
+
+/***********SIGNIN STYLES**************/
+
+
+
+.signin-right-side-container{
+    -fx-background-color: white;
+}
+
+/***Left container**/
+.left-side-container{/*
+-fx-background-color: linear-gradient(to right,#4facfe,#00f2fe);
+ -fx-background-color: linear-gradient(to right,#0c3483,#6b8cce);
+
+    */
+    -fx-background-color: linear-gradient(to top left,#30cfd0,#330867);
+}
+
+.signin-left-side-header-title{
+    -fx-font-family: 'Gugi';
+ 
+    -fx-fill:white;
+    -fx-font-size:40px;
+    -fx-font-weight:bold;
+}
+.signin-right-side-header-title{
+    -fx-font-family: 'Gugi';
+       -fx-fill:#555;
+    -fx-font-size:25px;
+    -fx-font-weight:bold;  
+}
+.signin-left-side-body-sub-title{
+    -fx-fill:#fff;
+    -fx-font-size:15px;
+
+    -fx-font-weight:normal;
+} 
+.mail-link .text{
+    -fx-font-size:15;
+}
+
+.mail-link{
+    -fx-text-fill:#fff;
+
+
+    -fx-font-weight:normal;
+
+
+    -fx-border-style:solid;
+    -fx-border-color:transparent transparent #eee transparent;
+    -fx-background-color:transparent;
+    -fx-border-width:1px;
+}
+
+
+/***********ENTRY STYLES**************/
+
+/***Right container*/
+
+.entry-right-side-container{
+    -fx-background-color:#3532A0;
+}
+
+.entry-right-side-header-title{
+    -fx-fill: white;
+    -fx-font-size:25px;
+    -fx-font-weight:bolder;
+}
+.entry-right-side-body-sub-title{
+    -fx-fill:white;
+    -fx-font-size:15px;
+    -fx-font-weight:normal;
+}
+.cirlce{
+    -fx-stroke:transparent;
+    -fx-fill:#615DB4;
+}
+.cirlce-active{
+    -fx-stroke:transparent;
+    -fx-fill:white;
+}
+.btn-normal-styled{
+    -fx-background-color: #292D4B;/*#374353;*/
+}
+.button{
+
+    /*-fx-pref-width:120px;*/
+    -fx-cursor: hand;
+    -fx-border-radius:4;
+    -fx-background-radius:4;
+    -fx-border-width:0.5;
+    -fx-background-color:-fx-surface;
+    -fx-text-fill:-fx-text-primary;
+    -fx-border-color:-fx-primary;
+}
+
+
+.social-btns{
+    -fx-pref-height:50px;
+    -fx-pref-width:50px;
+    -fx-border-radius:80px;
+    -fx-background-radius:80px;
+    -fx-background-color:transparent;
+    -fx-border-style:solid;
+    -fx-border-color:#eee;
+    -fx-border-width:2px;
+}
+
+.label{
+    -fx-text-fill:-fx-text-primary;
+}
+.jfx-button{
+    -fx-text-fill:-fx-text-primary;
+
+}
+.all-icons{
+    -fx-fill:-fx-text-primary;
+
+}
+.button-style-c{
+    -fx-pref-height:50px;
+    -fx-pref-width:300px;
+    -fx-font-size:15px;
+    -fx-background-color:linear-gradient(to left,#77FFD2,#1EECFF);
+    -fx-text-fill:-fx-text-primary;
+}
